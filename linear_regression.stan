@@ -1,3 +1,4 @@
+
 data {
   int<lower=0> N;          // Nombre de points de données
   vector[N] x;             // Variable indépendante
@@ -13,3 +14,4 @@ parameters {
 model {
   y ~ normal(alpha + beta * x, sigma);  // Distribution des observations
 }
+
