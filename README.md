@@ -1,9 +1,9 @@
 # cmdstan_reg_linear
-Bayesian Linear Regression with CmdStanR
+# Bayesian Linear Regression with CmdStanR
 This repository demonstrates a complete workflow for Bayesian linear regression using CmdStanR, the R interface to CmdStan. The script is self-contained and covers all steps, from data generation to results visualization.
 
-Workflow Steps
-Model Definition
+# Workflow Steps
+# Model Definition
 
 The Stan model is defined in the script and saved as linear_regression.stan.
 It implements a simple linear regression:
@@ -19,10 +19,10 @@ It implements a simple linear regression:
 𝜎
 )
 y∼N(α+βx,σ)
-Data Generation
+# Data Generation
 
 Synthetic data is generated in R with known parameters (α = 2.5, β = 0.9, σ = 0.5).
-Model Compilation
+# Model Compilation
 
 The Stan model is compiled using CmdStanR for efficient sampling.
 Posterior Sampling
@@ -34,11 +34,11 @@ Results Analysis
 Results include posterior summaries, convergence diagnostics, and visualizations:
 Trace plots for MCMC diagnostics.
 Scatter plot of data points with the regression line based on posterior means.
-How to Run
+# How to Run
 Install the required R packages:
 
 R
-Copier le code
+
 install.packages("cmdstanr")
 cmdstanr::install_cmdstan()
 install.packages("bayesplot")
@@ -51,10 +51,10 @@ View outputs in the R console and graphical window:
 
 Posterior summaries are displayed in the console.
 Trace plots and the regression plot are generated as graphical outputs.
-Requirements
+# Requirements
 R (≥ 4.0)
 CmdStan (installed via CmdStanR)
-Visualization
+# Visualization
 The script uses the bayesplot library to display:
 
 MCMC trace plots for key parameters (α, β, σ).
